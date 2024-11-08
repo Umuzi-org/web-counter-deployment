@@ -9,6 +9,7 @@ jobs:
   docker-build-push:
     runs-on: ubuntu-latest
 
+    steps:
     - name: Test
       run: echo ${{ github.ref_name }}
 
