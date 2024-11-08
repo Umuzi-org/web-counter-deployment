@@ -70,7 +70,7 @@ jobs:
       with:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/backend:latest
-        dockerfile: ./backend.dockerfile
+        file: ./backend.dockerfile
 
   # docker/login-action
   # docker/build-push-action
