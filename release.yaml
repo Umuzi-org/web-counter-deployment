@@ -1,8 +1,0 @@
-# name: release
-# 
-# on:
-#   release:
-#     types:
-#     - published
-
-  # ${{ github.ref_name }}
