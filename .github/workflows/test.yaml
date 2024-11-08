@@ -12,7 +12,7 @@ env:
 jobs:
 
   # list of jobs
-  test:
+  unit-tests:
     # where our code will run, GitHub self-hosted runner
     runs-on: ubuntu-latest
 
@@ -40,3 +40,25 @@ jobs:
     - name: Run tests
       run: |
         python tests.py
+
+  integration-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run integration test
+      run: sleep 10
+
+  # build-push-docker-image:
+  #   runs-on: ubuntu-latest
+
+    # needs:
+    # - test
+
+
+  # docker/login-action
+  # docker/build-push-action
+  # secrets.SECRET_NAME
+  # ${{ github.sha }}
+
+
+
