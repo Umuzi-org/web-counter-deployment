@@ -46,7 +46,7 @@ jobs:
 
     steps:
     - name: Run integration test
-      run: sleep 10
+      run: xsleep 10
 
   build-push-docker-image:
     runs-on: ubuntu-latest
